@@ -59,8 +59,9 @@ password:password
 #call protected resource
 set Authorization header as
 ````
-
 -H "Authorization : Bearer <access_token>
+
+or set bearer token directly in authorization bar
 ````
 
 
