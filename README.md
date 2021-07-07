@@ -1,5 +1,10 @@
 # resourceserver
 
+Note: If running iside docker use below command to add binding, otherwise port will not be mapped
+````
+./standalone.sh -Djboss.socket.binding.port-offset=0 -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0 -Dkeycloak.migration.action=import -Dkeycloak.migration.provider=singleFile -Dkeycloak.migration.file=$DIR/config/oauth2-sample-realm-config.json -Dkeycloak.migration.strategy=OVERWRITE_EXISTING
+````
+
 See
 
 https://github.com/jgrandja/spring-security-oauth-5-2-migrate
