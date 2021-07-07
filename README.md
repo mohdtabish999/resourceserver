@@ -61,7 +61,7 @@ password:password
 ````
 Push to PCF
 ````
-cf push keycloak-auth-server --docker-image mohdtabish99/keycloak:latest
+cf push keycloak-auth-server -u http -t 150 --docker-image mohdtabish99/keycloak:latest
 ````
 
 
@@ -73,5 +73,7 @@ set Authorization header as
 
 or set bearer token directly in authorization bar
 ````
+#Updated
 
+Use http for health check and time delayed for 150 second in case app takes time to start.Remove EXPOSE 80 from Dockerfile otherwise it will by default check health status on port 80 and fails(App will not start).
 
