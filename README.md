@@ -59,6 +59,11 @@ username:user1
 password:password
 
 ````
+Push to PCF
+````
+cf push keycloak-auth-server --docker-image mohdtabish99/keycloak:latest
+````
+
 
 
 #call protected resource
