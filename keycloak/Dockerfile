@@ -23,6 +23,7 @@ WORKDIR /opt/keycloak/
 
 EXPOSE 8080
 EXPOSE 9990
+# EXPOSE 9990
 
 #notepad++ ->edit->EOL conversion 
 
