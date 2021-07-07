@@ -1,6 +1,6 @@
 # resourceserver
 
-Note: If running iside docker use below command to add binding, otherwise port will not be mapped
+Note: If running inside docker use below command to add binding, otherwise port will not be mapped(already done in run3.sh)
 ````
 ./standalone.sh -Djboss.socket.binding.port-offset=0 -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0 -Dkeycloak.migration.action=import -Dkeycloak.migration.provider=singleFile -Dkeycloak.migration.file=$DIR/config/oauth2-sample-realm-config.json -Dkeycloak.migration.strategy=OVERWRITE_EXISTING
 ````
